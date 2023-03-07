@@ -43,9 +43,7 @@ RSpec.describe do
     expect(@vendor2.potential_revenue).to eq(345.00)
     expect(@vendor3.potential_revenue).to eq(48.75)
   end
-  # 1. Market #total_inventory
-  # 2. Market #overstocked_items
-  # 3. Market #sorted_item_list
+  
   it 'total_inventory' do
     @vendor1.stock(@item1, 35)
     @vendor1.stock(@item2, 7)
